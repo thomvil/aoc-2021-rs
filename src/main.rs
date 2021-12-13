@@ -1,4 +1,4 @@
-// #![allow(dead_code, unused_imports, unused_variables)]
+#![allow(dead_code, unused_imports, unused_variables)]
 #![warn(
     anonymous_parameters,
     missing_copy_implementations,
@@ -15,4 +15,19 @@
 )]
 #![forbid(unsafe_code)]
 
-fn main() {}
+mod days;
+mod error;
+mod prelude;
+mod util;
+
+use crate::prelude::*;
+
+fn main() -> Aoc2021Result<()> {
+    println!("|----------------------------|");
+    println!("| Advent of Code 2021 ~ Rust |");
+    println!("|----------------------------|");
+
+    report_day02()?;
+
+    Ok(())
+}
