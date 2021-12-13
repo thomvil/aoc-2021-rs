@@ -1,0 +1,31 @@
+[package]
+edition = "2021"
+name = "aoc-2021"
+version = "0.1.0"
+
+authors = ["Thomas Villa <thomvil87@gmail.com>"]
+description = ""
+documentation = "https://docs.rs/aoc-2021/"
+homepage = "https://github.com/thomvil/aoc-2021-rs"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/thomvil/aoc-2021-rs"
+
+[dependencies]
+# chrono = "*"
+# lazy_static = "*"
+# itertools = "*"
+# rand = "*"
+# rayon = "*"
+# regex = "*"
+# serde = { version = "^1", features = ["derive"] }
+# serde_json = "*"
+
+# [dev-dependencies]
+# claim = "*"
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3
+panic = 'abort'
